@@ -19,13 +19,12 @@ def sent_analyzer():
     text_to_analyze = request.args.get('textToAnalyze')
     response = sentiment_analyzer(text_to_analyze)
 
-    label = "Invalid input! Try again."
+    if response['label'] is None:
+        return "Invalid input! Try again."
 
-    if response['label'] is not None:
-        # Extract the label and score from the response
-        label = response['label'].split('_')[1]
-        score = response['score']
-
+    # Extract the label and score from the response
+    label = response['label'].split('_')[1]
+    score = response['score']
 
     # Return a formatted string with the sentiment label and score
     return f"The given text has been identified as {label} with a score of {score}."
