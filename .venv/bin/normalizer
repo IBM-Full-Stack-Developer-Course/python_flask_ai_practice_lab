@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/attila/Coursera/IBM_Full_Stack/Practice/8. AI Applications with Python and Flask/zzrjt-practice-project-emb-ai/.venv/bin/python3.13" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from charset_normalizer.cli import cli_detect
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli_detect())
