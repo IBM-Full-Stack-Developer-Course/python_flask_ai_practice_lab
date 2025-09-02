@@ -11,9 +11,9 @@ class TestSentimentAnalyzer(unittest.TestCase):
         self.assertEqual(result['label'], 'SENT_POSITIVE')
 
         result_2 = sentiment_analyzer(case_2)
-        self.assertEqual(result['label'], 'SENT_NEGATIVE')
+        self.assertEqual(result_2['label'], 'SENT_NEGATIVE')
 
         result_3 = sentiment_analyzer(case_3)
-        self.assertEqual(result['label'], 'SENT_NEUTRAL')
+        self.assertEqual(result_3['label'], 'SENT_NEUTRAL')
 
 unittest.main()
