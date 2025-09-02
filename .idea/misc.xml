@@ -4,5 +4,5 @@
     <option name="sdkName" value="Python 3.13 (zzrjt-practice-project-emb-ai)" />
   </component>
   <component name="KubernetesApiProvider"><![CDATA[{}]]></component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (zzrjt-practice-project-emb-ai)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 virtualenv at ~/Coursera/IBM_Full_Stack/Practice/8. AI Applications with Python and Flask/practice_lab/.venv" project-jdk-type="Python SDK" />
 </project>
