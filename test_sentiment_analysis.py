@@ -4,7 +4,7 @@ import unittest
 class TestSentimentAnalyzer(unittest.TestCase):
     def test_sentiment_analyzer(self):
         case_1 = "I love working with Python"
-        case_2 = "I love working with Python"
+        case_2 = "I hate working with Python"
         case_3 =  "I am neutral on Python"
 
         result = sentiment_analyzer(case_1)
