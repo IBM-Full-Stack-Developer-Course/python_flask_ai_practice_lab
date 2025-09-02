@@ -6,7 +6,6 @@
 from flask import Flask, render_template, request
 from SentimentAnalysis.sentiment_analysis import sentiment_analyzer
 
-#Initiate the flask app : TODO
 app = Flask("Sentiment Analyzer")
 
 @app.route("/sentimentAnalyzer")
@@ -17,6 +16,10 @@ def sent_analyzer():
         score for the provided text.
     '''
     text_to_analyze = request.args.get('textToAnalyze')
+
+    if text_to_analyze is None or text_to_analyze.strip() == "":
+        return "No input provided"
+
     response = sentiment_analyzer(text_to_analyze)
 
     if response['label'] is None:
