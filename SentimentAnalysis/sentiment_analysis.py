@@ -11,7 +11,7 @@ def sentiment_analyzer(text_to_analyse):
     label = None
     score = None
 
-    if response.status_code == "200":
+    if response.status_code == 200:
         label = formatted_response['documentSentiment']['label']
         score = formatted_response['documentSentiment']['score']
 
